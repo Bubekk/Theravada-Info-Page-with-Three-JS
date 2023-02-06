@@ -1,0 +1,217 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+#scrollPercent {
+  position: fixed;
+  color: green;
+}
+
+#sceneContainer {
+  width: 100%;
+  height: 100%;
+}
+#sceneContainer canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+#contentWrap {
+  width: 100%;
+  position: absolute;
+}
+#contentWrap nav {
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: 20rem;
+}
+#contentWrap nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+#contentWrap nav ul li {
+  list-style: none;
+}
+#contentWrap nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+#contentWrap nav ul li a:hover {
+  letter-spacing: 0.1rem;
+  color: rgb(230, 115, 63);
+}
+#contentWrap h1 {
+  color: white;
+  text-align: center;
+  font-size: 10rem;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+#contentWrap h1 span {
+  color: rgb(230, 115, 63);
+  font-size: 3rem;
+}
+#contentWrap .sections {
+  margin-top: 25rem;
+  padding: 2.5rem;
+  color: white;
+}
+#contentWrap .sections div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rem;
+}
+#contentWrap .sections h2 {
+  font-size: 5rem;
+  width: 50%;
+  line-height: 4rem;
+}
+#contentWrap .sections p {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  width: 40%;
+}
+#contentWrap .sections #concept-1 {
+  align-items: flex-start;
+}
+#contentWrap .sections #concept-2 {
+  align-items: center;
+  text-align: center;
+}
+#contentWrap .sections #concept-3 {
+  align-items: flex-end;
+  text-align: right;
+}
+#contentWrap .sections #idea-1 {
+  align-items: center;
+}
+#contentWrap .sections #idea-1 h2 {
+  text-align: center;
+}
+#contentWrap .sections #idea-1 p {
+  width: 100%;
+  text-align: center;
+}
+#contentWrap .sections #conclusion-1 {
+  align-items: center;
+}
+#contentWrap .sections #conclusion-1 h2 {
+  text-align: center;
+}
+#contentWrap .sections #conclusion-1 p {
+  width: 100%;
+  text-align: center;
+}
+#contentWrap .sections #contactWrap {
+  align-items: center;
+  margin-bottom: 0;
+}
+#contentWrap .sections #contactWrap h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+#contentWrap .sections #contactWrap ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+#contentWrap .sections #contactWrap ul li {
+  margin-right: 2rem;
+  list-style: none;
+  text-align: center;
+}
+#contentWrap .sections #contactWrap ul li p {
+  font-size: 1rem;
+}
+#contentWrap .sections #contactWrap a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+#contentWrap .sections #contactWrap a:hover {
+  letter-spacing: 0.1rem;
+  color: rgb(230, 115, 63);
+}
+#contentWrap #buttonWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35rem;
+  margin-top: 35rem;
+}
+#contentWrap #buttonWrap #btns {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+#contentWrap #buttonWrap #btns #right {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#contentWrap #buttonWrap #btns #right:hover {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgb(230, 115, 63);
+}
+#contentWrap #buttonWrap #btns #play {
+  width: 5px;
+  height: 30px;
+  background: white;
+  border: 10px solid white;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+#contentWrap #buttonWrap #btns #play:hover {
+  background: rgb(230, 115, 63);
+  border: 10px solid rgb(230, 115, 63);
+}
+#contentWrap #buttonWrap #btns #play::after {
+  content: "Click me";
+  position: absolute;
+  color: white;
+  margin-top: 60px;
+  align-self: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#contentWrap #buttonWrap #btns #play:hover::after {
+  opacity: 1;
+}
+#contentWrap #buttonWrap #btns #left {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#contentWrap #buttonWrap #btns #left:hover {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgb(230, 115, 63);
+}/*# sourceMappingURL=style.css.map */
